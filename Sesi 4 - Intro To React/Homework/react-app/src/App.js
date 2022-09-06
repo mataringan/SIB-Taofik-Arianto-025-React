@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
+
 import "./App.css";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <main>
           <section className="profile">
             <div className="image">
-              <img src="" alt="" />
+              <img src={logo} />
             </div>
             <div className="about">
               <h3>Hacktiv8 Meetup</h3>
@@ -83,7 +84,7 @@ function App() {
             <p>Twitter: @JakartaJS and we use the hastag #jakartajs</p>
           </article>
           <div className="headerMembers">
-            <div class="header">
+            <div className="header">
               <h3> Members </h3>
               <h4> See all</h4>
             </div>
@@ -93,7 +94,7 @@ function App() {
               <div className="image">
                 <img src="" alt="" />
               </div>
-              <div class="nameProfile">
+              <div className="nameProfile">
                 <p>Organizers</p>
                 <p>
                   Adhy Wiranata <span>4 others.</span>
@@ -101,50 +102,50 @@ function App() {
               </div>
             </div>
           </article>
-          <div class="headerMembers">
-            <div class="header">
+          <div className="headerMembers">
+            <div className="header">
               <h3>Past Meetups</h3>
               <h4>See all</h4>
             </div>
           </div>
           <article className="fourthArticle">
-            <div class="card">
-              <div class="firstCard">
+            <div className="card">
+              <div className="firstCard">
                 <p>27 November 2017</p>
                 <hr />
                 <p>#39 JakartaJS April Meetup with kumparan</p>
                 <p>
                   139 <span>went</span>
                 </p>
-                <div class="view">
+                <div className="view">
                   <p>View</p>
                 </div>
               </div>
-              <div class="secondCard">
+              <div className="secondCard">
                 <p>27 October 2017</p>
                 <hr />
                 <p>#38 JakartaJS April Meetup with BliBli</p>
                 <p>
                   113 <span>went</span>
                 </p>
-                <div class="view">
+                <div className="view">
                   <p>View</p>{" "}
                 </div>
               </div>
-              <div class="thirdCard">
+              <div className="thirdCard">
                 <p>27 September 2017</p>
                 <hr />
                 <p>#37 JakartaJS April Meetup with Hacktiv8</p>
                 <p>
                   110 <span>went</span>
                 </p>
-                <div class="view">
+                <div className="view">
                   <p>View</p>
                 </div>
               </div>
             </div>
           </article>
-          <div class="line"></div>
+          <div className="line"></div>
         </main>
         <footer>
           <p>Copyright Hacktiv8 2018</p>

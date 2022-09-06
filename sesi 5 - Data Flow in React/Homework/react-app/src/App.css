@@ -80,14 +80,17 @@ main {
 
 .location {
   margin-left: 50px;
+  font-weight: 500;
 }
 
 .members {
   margin-left: 42px;
+  font-weight: 500;
 }
 
 .organizers {
   margin-left: 33px;
+  font-weight: 500;
 }
 
 .join {
@@ -104,6 +107,23 @@ main {
   border-radius: 20px;
 }
 
+.changeProfile {
+  position: absolute;
+  padding: 5px;
+  width: 100px;
+  height: 36px;
+  font-weight: bold;
+  margin-top: -56px;
+  margin-left: 150px;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  border-radius: 20px;
+  border: 0;
+}
+
+.changeProfile:hover {
+  cursor: pointer;
+}
 article {
   width: 97%;
 }
