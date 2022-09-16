@@ -32,6 +32,8 @@ function App() {
     )
       .then((response) => response.json())
       .then((json) => {
+        // console.log(json.rates.CAD);
+
         const resultBuySellCAD = (json.rates.CAD * 5) / 100;
         const resultBuySellEUR = (json.rates.EUR * 5) / 100;
         const resultBuySellIDR = (json.rates.IDR * 5) / 100;

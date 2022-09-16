@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Halu from "./Materi/Component Lifecycle/DidUpdate";
+import HaluFetch from "./Materi/Fetch Data/ClassCompFetch";
 // import Clock from "./Materi/Component Lifecycle/DidMount";
 
 // import Example from "./Materi/Component Lifecycle/LifeCycleFunction";
@@ -59,6 +61,10 @@ function App() {
       <h1>Realtime CLOCK</h1>
       <hr />
       <h1>{date.toLocaleTimeString()}</h1>
+      <hr />
+      <Halu />
+      <hr />
+      <HaluFetch />
     </div>
   );
 }

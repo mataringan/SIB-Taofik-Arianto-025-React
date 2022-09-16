@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Halu extends Component {
+export default class HaluFetch extends Component {
   constructor(props) {
     super(props);
 
@@ -12,15 +12,17 @@ export default class Halu extends Component {
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((response) => response.json())
-      .then((data) => this.setState({ todos: data.slice(0, 20) }));
+      .then((data) => this.setState({ todos: data })); //
   }
 
   render() {
+    const postTodo = this.state.todos;
     return (
       <div>
+        {/* <h1>{this.state.todos}</h1> */}
         <table className="table">
           <tbody>
-            {this.state.todos.map((todo, index) => {
+            {postTodo.map((todo, index) => {
               <tr key={index}>
                 <td>{todo.id}</td>
                 <td>{todo.title}</td>
