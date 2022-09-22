@@ -2,7 +2,7 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { increment, decrement, incrementByAmount } from "./counterSlice.js";
 
-export default class CounterClass extends Component {
+class CounterClass extends Component {
   state = {
     incrementAmount: 0,
   };
@@ -49,3 +49,9 @@ export default class CounterClass extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  localCount: state.counter.count,
+});
+
+export default connect(mapStateToProps)(CounterClass);
