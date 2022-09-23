@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "title": "Product 3",
+      "price": 567
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "price": 789
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "price": 910,
+      "requestId": "J2UyM8MvNYTLRjOK-HTkX",
+      "signal": {}
+    },
+    {
+      "title": "klkl",
+      "price": "124",
+      "id": 6
+    }
+  ]
+}
